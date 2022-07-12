@@ -2,6 +2,7 @@ import Button from "../components/Button/button";
 import Navbar from "../modules/nav/navbar";
 import Header from "../modules/header";
 import Hero from "../modules/hero";
+import Card from "../modules/cards/card";
 
 export default function Home() {
   return (
@@ -11,6 +12,59 @@ export default function Home() {
           <Navbar />
           <Hero />
         </header>
+        {/* <header class="py-6">
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <div class="text-lg font-bold">Jonathan.doe</div>
+            <div class="hidden md:flex space-x-12 items-center">
+                <a href="#" class="text-selected-text">Home</a>
+                <a href="#work">My work</a>
+                <a href="#clients">Clients</a>
+                <a href="#hire"><button class="px-6 py-2 bg-theme font-bold">Hire me</button></a>
+            </div>
+            <div class="md:hidden">
+                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="white"/></svg>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <div class="flex flex-wrap md:flex-nowrap">
+
+            <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+                <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+                    <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+                    </a>
+                    <a href="#work" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Work</span>
+                    </a>
+                    <a href="#clients" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Clients</span>
+                    </a>
+                    <a href="#hire" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Hire</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">Building<br/> beautiful web experiences.</h1>
+                <div class="w-full flex justify-center md:justify-start">
+                    <button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
+                        <div>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.4375 11C14.4375 11.9117 14.0753 12.786 13.4307 13.4307C12.786 14.0753 11.9117 14.4375 11 14.4375C10.0883 14.4375 9.21398 14.0753 8.56932 13.4307C7.92466 12.786 7.5625 11.9117 7.5625 11C7.5625 10.0883 7.92466 9.21398 8.56932 8.56932C9.21398 7.92466 10.0883 7.5625 11 7.5625C11.9117 7.5625 12.786 7.92466 13.4307 8.56932C14.0753 9.21398 14.4375 10.0883 14.4375 11Z" fill="white"/>
+                                <path d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z" fill="white"/>
+                            </svg>								
+                        </div>
+                        <span>View my work.</span>
+                    </button>
+                </div>
+            </div>
+            <img src="img/man.png" alt="Man" class="w-3/4 mt-12 md:absolute -mt-6 md:mt-0 right-0 -z-1"/>
+        </div>
+    </div> */}
 
         {/* My projects */}
         <div className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
@@ -23,8 +77,9 @@ export default function Home() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+              {/* <Card /> */}
               <img
-                src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+                src="https://images.unsplash.com/photo-1512205908084-f43bea685ff1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
                 className="w-full bg-nav h-36 lg:h-72 object-cover"
               />
               <img
@@ -63,118 +118,97 @@ export default function Home() {
           </section>
         </div>
 
-        {/* Clients */}
+        {/* Projects */}
+
         <div className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
           <section class="w-full">
             <h2 id="clients" class="secondary-title">
-              Clients
+              Projects
             </h2>
             <p class="section-paragraph">
-              I’ve had the pleasure of working with multiple Fortune 500
-              companies, designing and implementing both frontend and backend.
+              What I've worked on during my learning process
             </p>
 
-            {/* <!-- Clients --> */}
             <div class="space-y-12 my-16">
-              <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
-                {/* <!-- Client logo --> */}
-                <div class="mb-6 lg:mb-0">
-                  <svg
-                    width="80"
-                    height="96"
-                    viewBox="0 0 80 96"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M66.6983 92.1599C61.5487 97.2095 55.867 96.4223 50.4513 94.0415C44.6936 91.6127 39.4299 91.4591 33.3492 94.0415C25.7767 97.3439 21.7577 96.3839 17.1972 92.1599C-8.55106 65.3759 -4.75058 24.5759 24.5131 23.0399C31.6105 23.4239 36.5796 27.0047 40.7601 27.3023C46.9739 26.0255 52.9216 22.3679 59.5724 22.8479C67.5629 23.5007 73.5392 26.6879 77.5297 32.4191C61.0926 42.4031 64.9881 64.2911 80.0855 70.4351C77.0641 78.4511 73.1876 86.3711 66.6888 92.2271L66.6983 92.1599ZM40.19 22.7519C39.4204 10.8479 48.9691 1.05595 59.9525 0.0959473C61.4632 13.8239 47.6009 24.0959 40.19 22.7519Z"
-                      fill="white"
-                    />
-                  </svg>
+            
+              {/* Project 1 */}
+            
+              {/* Project 1 */}
+              <div class="w-full border border-nav p-8 lg:px-16 lg:py-10 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                <div class="object-cover h-48 w-96">
+                  <img
+                    class="object-cover h-48 w-96"
+                    src="https://images.unsplash.com/photo-1512205908084-f43bea685ff1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
+                    alt="Photo by Andras Vas on Unsplash"
+                  />
                 </div>
 
-                {/* <!-- Client info --> */}
+                {/* <!-- Project 2 Info --> */}
                 <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                  <h3 class="text-white text-3xl font-semibold">Apple, inc.</h3>
+                  <h3 class="text-white text-3xl font-semibold">
+                    Fractal Tree
+                  </h3>
 
                   <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-                    <div class="badge">UI/UX</div>
-                    <div class="badge">Frontend development</div>
+                    <div class="badge">React/Next.js</div>
+                    <div class="badge">TailwindCss</div>
+                    <div class="badge">HTML Canvas</div>
+                    <div class="badge">Vercel</div>
                   </div>
 
-                  <p class="text-secondary">
-                    I’ve had the pleasure of working with multiple Fortune 500
-                    companies, designing and implementing both frontend and
-                    backend.
-                  </p>
+                  <p class="text-secondary">User generated fractals.</p>
                 </div>
               </div>
-              <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
-                {/* <!-- Client logo --> */}
-                <div class="mb-6 lg:mb-0">
-                  <svg
-                    width="80"
-                    height="96"
-                    viewBox="0 0 80 96"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M66.6983 92.1599C61.5487 97.2095 55.867 96.4223 50.4513 94.0415C44.6936 91.6127 39.4299 91.4591 33.3492 94.0415C25.7767 97.3439 21.7577 96.3839 17.1972 92.1599C-8.55106 65.3759 -4.75058 24.5759 24.5131 23.0399C31.6105 23.4239 36.5796 27.0047 40.7601 27.3023C46.9739 26.0255 52.9216 22.3679 59.5724 22.8479C67.5629 23.5007 73.5392 26.6879 77.5297 32.4191C61.0926 42.4031 64.9881 64.2911 80.0855 70.4351C77.0641 78.4511 73.1876 86.3711 66.6888 92.2271L66.6983 92.1599ZM40.19 22.7519C39.4204 10.8479 48.9691 1.05595 59.9525 0.0959473C61.4632 13.8239 47.6009 24.0959 40.19 22.7519Z"
-                      fill="white"
-                    />
-                  </svg>
+               {/* Project 2 */}
+               <div class="w-full border border-nav p-8 lg:px-16 lg:py-10 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                <div class="object-cover h-48 w-96">
+                  <img
+                    class="object-cover h-48 w-96"
+                    src="https://images.unsplash.com/photo-1513781419235-2988ecacab83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Photo by Andras Vas on Unsplash"
+                  />
                 </div>
 
-                {/* <!-- Client info --> */}
+                {/* Project 3 Info */}
                 <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                  <h3 class="text-white text-3xl font-semibold">Apple, inc.</h3>
+                  <h3 class="text-white text-3xl font-semibold">Yelp Clone</h3>
 
                   <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-                    <div class="badge">UI/UX</div>
-                    <div class="badge">Frontend development</div>
+                    <div class="badge">Javascript</div>
+                    <div class="badge">Node</div>
+                    <div class="badge">Express</div>
+                    <div class="badge">EJS</div>
+                    <div class="badge">MongoDB</div>
+                    <div class="badge">Heroku</div>
                   </div>
-
-                  <p class="text-secondary">
-                    I’ve had the pleasure of working with multiple Fortune 500
-                    companies, designing and implementing both frontend and
-                    backend.
-                  </p>
+                  <p class="text-secondary">Recreation review & rating site.</p>
                 </div>
               </div>
-              <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
-                {/* <!-- Client logo --> */}
-                <div class="mb-6 lg:mb-0">
-                  <svg
-                    width="80"
-                    height="96"
-                    viewBox="0 0 80 96"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M66.6983 92.1599C61.5487 97.2095 55.867 96.4223 50.4513 94.0415C44.6936 91.6127 39.4299 91.4591 33.3492 94.0415C25.7767 97.3439 21.7577 96.3839 17.1972 92.1599C-8.55106 65.3759 -4.75058 24.5759 24.5131 23.0399C31.6105 23.4239 36.5796 27.0047 40.7601 27.3023C46.9739 26.0255 52.9216 22.3679 59.5724 22.8479C67.5629 23.5007 73.5392 26.6879 77.5297 32.4191C61.0926 42.4031 64.9881 64.2911 80.0855 70.4351C77.0641 78.4511 73.1876 86.3711 66.6888 92.2271L66.6983 92.1599ZM40.19 22.7519C39.4204 10.8479 48.9691 1.05595 59.9525 0.0959473C61.4632 13.8239 47.6009 24.0959 40.19 22.7519Z"
-                      fill="white"
-                    />
-                  </svg>
+              {/* Project 3 */}
+              <div class="w-full border border-nav p-8 lg:px-16 lg:py-10 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                <div class="object-cover h-48 w-96">
+                  <img
+                    class="object-cover h-48 w-96"
+                    src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                    alt="Photo by Andras Vas on Unsplash"
+                  />
                 </div>
 
-                {/* <!-- Client info --> */}
+                {/* Project 2 Info */}
                 <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                  <h3 class="text-white text-3xl font-semibold">Apple, inc.</h3>
+                  <h3 class="text-white text-3xl font-semibold">Clients</h3>
 
                   <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-                    <div class="badge">UI/UX</div>
-                    <div class="badge">Frontend development</div>
+                    <div class="badge">
+                      <a >Postural Chiropractic</a>
+                    </div>
+                    <div class="badge">Off The Chazz Fishing Adventure</div>
                   </div>
 
-                  <p class="text-secondary">
-                    I’ve had the pleasure of working with multiple Fortune 500
-                    companies, designing and implementing both frontend and
-                    backend.
-                  </p>
+                  {/* <p class="text-secondary">User generated fractals.</p> */}
                 </div>
               </div>
+             
             </div>
           </section>
         </div>
