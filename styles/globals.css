@@ -75,3 +75,15 @@ a {
 .nav-dot:hover span {
   opacity: 1;
 }
+.custom-sidebar {
+  position: fixed;
+  /* background-color: orangered; */
+  width: 4px;
+  /* top: 0;
+  bottom: 0; */
+  height: 100vh;
+  margin-top: 1.5em;
+  left: 45%;
+  right: 45%;
+  z-index: -1;
+}

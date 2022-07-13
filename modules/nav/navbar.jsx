@@ -4,7 +4,7 @@ import NavItem from "../../components/Link/nav_link";
 export default function Navbar() {
   return (
     <nav className="">
-     <div className="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+     <div className="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full ">
             <div className="text-lg font-bold">Joshua Saunders</div>
             <div className="hidden md:flex space-x-12 items-center">
               <a href="#" className="text-selected-text">
