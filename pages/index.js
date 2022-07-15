@@ -155,10 +155,19 @@ export default function Home() {
                   </div>
 
                   {/* <!-- Project 2 Info --> */}
-                  <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                    <h3 className="text-white text-3xl font-semibold">
-                      Fractal Tree
-                    </h3>
+                  <div className="flex flex-wrap justify-center text-center lg:text-left lg:block mt-5 lg:mt-0">
+                    <div className="flex">
+                    <h3 className="text-white font-semibold text-3xl relative w-max two">
+                        <a href="https://search.brave.com/search?q=tailwind+classes&source=desktop">
+                          Fractal Tree
+                        </a>
+                        <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-theme"></span>
+                        <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-theme"></span>
+                      </h3>
+                      <a href="https://github.com/J-Saun" className="ml-3">
+                        <i className="fa-brands fa-github fa-2x"></i>
+                      </a>
+                    </div>
 
                     <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
                       <div className="badge">React/Next.js</div>
@@ -181,12 +190,19 @@ export default function Home() {
                   </div>
 
                   {/* Project 3 Info */}
-                  <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                    <h3 className="text-white text-3xl font-semibold">
-                      <a href="https://search.brave.com/search?q=tailwind+classes&source=desktop">
-                        Yelp Clone
+                  <div className="flex flex-wrap justify-center text-center lg:text-left lg:block mt-5 lg:mt-0">
+                    <div className="flex">
+                      <h3 className="text-white font-semibold text-3xl relative w-max two">
+                        <a href="https://search.brave.com/search?q=tailwind+classes&source=desktop">
+                          Yelp Clone
+                        </a>
+                        <span class="absolute -bottom-1 left-1/2 w-0 transition-all ease-in-out duration-300 h-1 bg-theme"></span>
+                        <span class="absolute -bottom-1 right-1/2 w-0 transition-all ease-in-out duration-300 h-1 bg-theme"></span>
+                      </h3>
+                      <a href="https://github.com/J-Saun" className="ml-3 scale-75 hover:scale-100 transition ease-in-out duration-300">
+                        <i className="fa-brands fa-github fa-2x"></i>
                       </a>
-                    </h3>
+                    </div>
 
                     <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
                       {/* <i class="fa-brands fa-js"></i> */}
@@ -198,9 +214,11 @@ export default function Home() {
                       <div className="badge">MongoDB</div>
                       <div className="badge">Heroku</div>
                     </div>
-                    <p className="text-secondary">
-                      Recreation review & rating site. <a>Github</a>
-                    </p>
+                    <div>
+                      <p className="text-secondary">
+                        Recreation review & rating site.
+                      </p>
+                    </div>
                     {/* <div className="flex flex-col">
                     <a>Github</a>
                     <a>Hosted Site</a>
@@ -227,7 +245,9 @@ export default function Home() {
                       <div className="badge">
                         <a>Postural Chiropractic</a>
                       </div>
-                      <div className="badge">Off The Chazz Fishing Adventure</div>
+                      <div className="badge">
+                        Off The Chazz Fishing Adventure
+                      </div>
                     </div>
 
                     {/* <p class="text-secondary">User generated fractals.</p> */}
@@ -240,7 +260,7 @@ export default function Home() {
           {/* Contact me */}
           <div className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <section className="w-full">
-              <h2 id="hire" className="secondary-title">
+              <h2 id="contact" className="secondary-title">
                 Contact me
               </h2>
               <p className="section-paragraph">
@@ -274,7 +294,7 @@ export default function Home() {
                     ></textarea>
                   </div>
                   <button className="px-6 py-2 bg-theme text-white font-bold">
-                    Send it!
+                  <i class="fa-solid fa-paper-plane mr-3"></i> Send it!
                   </button>
                 </div>
 

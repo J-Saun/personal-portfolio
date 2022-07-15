@@ -4,7 +4,7 @@ const Hero = () => {
       <div class="flex flex-wrap md:flex-nowrap">
         <nav class="bg-orange-900 inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
           <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36 ">
-      <div className="custom-sidebar bg-theme"></div>
+            <div className="custom-sidebar bg-theme"></div>
             <a
               href="#"
               class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body"
@@ -42,8 +42,9 @@ const Hero = () => {
 
         <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
           <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">
-          A digital 
-            <br />craftsman creating beautiful web experiences.
+            A digital
+            <br />
+            craftsman creating beautiful web experiences.
           </h1>
           <div class="w-full flex justify-center md:justify-start">
             <button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
