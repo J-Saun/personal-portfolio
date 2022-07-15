@@ -164,7 +164,7 @@ export default function Home() {
                         <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-theme"></span>
                         <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-theme"></span>
                       </h3>
-                      <a href="https://github.com/J-Saun" className="ml-3">
+                      <a href="https://github.com/J-Saun" className="ml-3 scale-75 hover:scale-100 transition ease-in-out duration-300">
                         <i className="fa-brands fa-github fa-2x"></i>
                       </a>
                     </div>

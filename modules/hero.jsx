@@ -42,6 +42,7 @@ const Hero = () => {
 
         <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
           <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">
+            
             A digital
             <br />
             craftsman creating beautiful web experiences.
