@@ -132,9 +132,9 @@ export default function Home() {
 
           {/* Projects */}
 
-          <div className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+          <div id="projects" className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <section className="w-full">
-              <h2 id="clients" class="secondary-title">
+              <h2 id="clients" className="secondary-title">
                 Projects
               </h2>
               <p className="section-paragraph">
@@ -161,15 +161,15 @@ export default function Home() {
                         <a href="https://search.brave.com/search?q=tailwind+classes&source=desktop">
                           Fractal Tree
                         </a>
-                        <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-theme"></span>
-                        <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-theme"></span>
+                        <span className="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-theme"></span>
+                        <span className="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-theme"></span>
                       </h3>
                       <a href="https://github.com/J-Saun" className="ml-3 scale-75 hover:scale-100 transition ease-in-out duration-300">
                         <i className="fa-brands fa-github fa-2x"></i>
                       </a>
                     </div>
 
-                    <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                    <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
                       <div className="badge">React/Next.js</div>
                       <div className="badge">TailwindCss</div>
                       <div className="badge">HTML Canvas</div>
@@ -196,8 +196,8 @@ export default function Home() {
                         <a href="https://search.brave.com/search?q=tailwind+classes&source=desktop">
                           Yelp Clone
                         </a>
-                        <span class="absolute -bottom-1 left-1/2 w-0 transition-all ease-in-out duration-300 h-1 bg-theme"></span>
-                        <span class="absolute -bottom-1 right-1/2 w-0 transition-all ease-in-out duration-300 h-1 bg-theme"></span>
+                        <span className="absolute -bottom-1 left-1/2 w-0 transition-all ease-in-out duration-300 h-1 bg-theme"></span>
+                        <span className="absolute -bottom-1 right-1/2 w-0 transition-all ease-in-out duration-300 h-1 bg-theme"></span>
                       </h3>
                       <a href="https://github.com/J-Saun" className="ml-3 scale-75 hover:scale-100 transition ease-in-out duration-300">
                         <i className="fa-brands fa-github fa-2x"></i>
@@ -236,7 +236,7 @@ export default function Home() {
                   </div>
 
                   {/* Project 3 Info */}
-                  <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
                     <h3 className="text-white text-3xl font-semibold">
                       Clients & <span className="">Example</span> Sites
                     </h3>
@@ -260,15 +260,15 @@ export default function Home() {
           {/* Contact me */}
           <div className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <section className="w-full">
-              <h2 id="contact" className="secondary-title">
+              <h2 className="secondary-title">
                 Contact me
               </h2>
-              <p className="section-paragraph">
+              <p  id="contact" className="section-paragraph">
                 Feel free to to reach out any time, through any method below.
               </p>
 
-              <div className="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
-                <div className="space-y-12">
+              <div className="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-10">
+                <div className="space-y-8">
                   <div>
                     <label className="text-white block mb-6 text-xl font-bold">
                       Name
@@ -294,7 +294,7 @@ export default function Home() {
                     ></textarea>
                   </div>
                   <button className="px-6 py-2 bg-theme text-white font-bold">
-                  <i class="fa-solid fa-paper-plane mr-3"></i> Send it!
+                  <i className="fa-solid fa-paper-plane mr-3"></i> Send it!
                   </button>
                 </div>
 
@@ -309,7 +309,7 @@ export default function Home() {
                     href="mailto:email@mydomain.com"
                     className="text-secondary mt-3 flex"
                   >
-                    <i clasNames="fa-solid fa-envelope fa-2x mr-4"></i>{" "}
+                    <i className="fa-solid fa-envelope fa-2x mr-4"></i>{" "}
                     email@mydomain.com
                   </a>
                   {/* Socials */}
