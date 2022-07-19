@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">
           Joshua Saunders
         </div>
-        <div id="" className="hidden md:flex space-x-12 items-center">
+        <div id="" className="hidden space-x-12 items-center md:flex">
           <a
             className="text-selected-text font-semibold text-lg  relative w-max two"
             href="#home"
@@ -22,17 +22,17 @@ export default function Navbar() {
             <span className="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-theme"></span>
             <span className="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-theme"></span>
           </a>
-
-          <a className="font-semibold text-lg  relative w-max two" href="#work">
-            My Projects
+          <a
+            className="font-semibold text-lg  relative w-max two"
+            href="#aboutMe"
+          >
+            About Me
             <span className="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-theme"></span>
             <span className="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-theme"></span>
           </a>
-          <a
-            className="font-semibold text-lg  relative w-max two"
-            href="#resources"
-          >
-            Resources
+
+          <a className="font-semibold text-lg  relative w-max two" href="#work">
+            My Projects
             <span className="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-theme"></span>
             <span className="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-theme"></span>
           </a>
@@ -65,26 +65,37 @@ export default function Navbar() {
       {/* Mobile nav menu  */}
       <div
         className={
-          "items-center flex flex-col  w-full bg-black md:hidden" +
-          (navbarOpen ? " " : " hidden")
+          "one-edge-shadow mobile-nav items-center flex flex-col  w-full md:hidden opacity-100" +
+          (navbarOpen ? " " : " mobile-nav-active")
         }
       >
-        <div className="mt-5">
-          <a
-            className="font-semibold text-lg  relative w-max two"
-            href="#projects"
-          >
-            Projects
-          </a>
-        </div>
-        <div className="mt-5">
-          <a
-            className="font-semibold text-lg  relative w-max two"
-            href="#contact"
-          >
-            Contact Me
-          </a>
-        </div>
+        <ul className="">
+          <li className="nav-item neon-text">
+            <a className="" href="#aboutMe" onClick={handleToggle}>
+              about me
+            </a>
+          </li>
+          <li className="nav-item neon-text">
+            <a className="" href="#projects" onClick={handleToggle}>
+              projects
+            </a>
+          </li>
+          <li className="nav-item neon-text">
+            <a className="" href="#contact" onClick={handleToggle}>
+              contact Me
+            </a>
+          </li>
+        </ul>
+        <div className="flex mt-20 space-x-6">
+                    {/* linkedin */}
+                    <a href="https://www.linkedin.com/in/joshua-a-saunders/">
+                      <i className="fa-brands fa-linkedin fa-2x"></i>
+                    </a>
+                    {/* Github */}
+                    <a href="https://github.com/J-Saun">
+                      <i className="fa-brands fa-github fa-2x"></i>
+                    </a>
+                  </div>
       </div>
     </nav>
   );
