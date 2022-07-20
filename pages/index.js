@@ -166,7 +166,7 @@ export default function Home() {
                     {/* <!-- Project 2 Info --> */}
                     <div className="flex flex-wrap justify-center text-center lg:text-left lg:block mt-5 lg:mt-0">
                       <div className="flex">
-                        <h3 className="text-white font-semibold text-3xl relative w-max two">
+                        <h3 className=" font-semibold text-3xl relative w-max two">
                           <a href="https://search.brave.com/search?q=tailwind+classes&source=desktop">
                             Fractal Tree
                           </a>
@@ -181,14 +181,14 @@ export default function Home() {
                         </a>
                       </div>
 
-                      <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                      <div className="w-full lg:w-auto text-white flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
                         <div className="badge">React/Next.js</div>
                         <div className="badge">TailwindCss</div>
                         <div className="badge">HTML Canvas</div>
                         <div className="badge">Vercel</div>
                       </div>
 
-                      <p className="text-secondary">User generated fractals.</p>
+                      <p className="">User generated fractals.</p>
                     </div>
                   </div>
                   {/* Project 2 */}
@@ -204,7 +204,7 @@ export default function Home() {
                     {/* Project 3 Info */}
                     <div className="flex flex-wrap justify-center text-center lg:text-left lg:block mt-5 lg:mt-0">
                       <div className="flex">
-                        <h3 className="text-white font-semibold text-3xl relative w-max two">
+                        <h3 className=" font-semibold text-3xl relative w-max two">
                           <a href="https://search.brave.com/search?q=tailwind+classes&source=desktop">
                             Yelp Clone
                           </a>
@@ -219,7 +219,7 @@ export default function Home() {
                         </a>
                       </div>
 
-                      <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                      <div className="w-full lg:w-auto text-white flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
                         {/* <i class="fa-brands fa-js"></i> */}
                         {/* <i class="fa-brands fa-node"></i> */}
                         <div className="badge">Javascript</div>
@@ -230,7 +230,7 @@ export default function Home() {
                         <div className="badge">Heroku</div>
                       </div>
                       <div>
-                        <p className="text-secondary">
+                        <p className="">
                           Recreation review & rating site.
                         </p>
                       </div>
@@ -256,7 +256,7 @@ export default function Home() {
                         Clients & <span className="">Example</span> Sites
                       </h3>
 
-                      <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                      <div className="w-full lg:w-auto text-white flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
                         <div className="badge">
                           <a>Postural Chiropractic</a>
                         </div>
@@ -283,13 +283,13 @@ export default function Home() {
                 <div className="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-10">
                   <div className="space-y-8">
                     <div>
-                      <label className="text-white block mb-6 text-xl font-bold">
+                      <label className="block mb-6 text-xl font-bold">
                         Name
                       </label>
                       <input className="w-full border border-input-border bg-input px-4 py-4" />
                     </div>
                     <div>
-                      <label className="text-white block mb-6 text-xl font-bold">
+                      <label className="block mb-6 text-xl font-bold">
                         Email
                       </label>
                       <input
@@ -298,7 +298,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <label className="text-white block mb-6 text-xl font-bold">
+                      <label className="block mb-6 text-xl font-bold">
                         Message
                       </label>
                       <textarea
